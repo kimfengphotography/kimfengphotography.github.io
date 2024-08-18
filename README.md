@@ -48,7 +48,7 @@
 
 * {box-sizing: border-box}
 body {font-family: Verdana, sans-serif; margin:0}
-.mySlides {display: none}
+.mySlides, .mySlides2 {display: none}
 img {vertical-align: middle;}
 
 /* Slideshow container */
@@ -57,6 +57,26 @@ img {vertical-align: middle;}
     width: 100%;
 }
 
+#container2 {
+    position:absolute;
+}
+
+#container3 {
+    position:absolute;
+}
+
+#container4 {
+    position:absolute;
+}
+
+#container5 {
+    position:absolute;
+}
+
+#container6 {
+    position:absolute;
+}
+
 img {
   max-width: 100%;
   max-height: 70vh;
@@ -69,31 +89,20 @@ img {
   object-fit: contain;
 }
 
-.slideshow-container-2 {
-    height: 100%;
-    width: 100%;
-}
-
-img {
-  max-width: 100%;
-  max-height: 70vh;
-  width: auto;
-  position: relative;
-  margin-top: 1%;
-  margin-bottom: 1%;
-  margin-left: auto;
-  margin-right: auto;
-  object-fit: contain;
+.centeredButtons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 /* Next & previous buttons */
-.prev, .next {
+.prev1, .next1, .prev2, .next2, .prev3, .next3, .prev4, .next4, .prev5, .next5 {
+  text-align: center;
   cursor: pointer;
-  position: absolute;
-  top: 50%;
+  position: relative;
   width: auto;
   padding: 16px;
-  margin-top: -22px;
+  display: inline-block;
   color: black;
   font-weight: bold;
   font-size: 18px;
@@ -103,9 +112,13 @@ img {
 }
 
 /* Position the "next button" to the right */
-.next {
+.next1, .next2, .next3, .next4, .next5 {
   right: 0;
   border-radius: 3px 0 0 3px;
+}
+
+.prev1 {
+    left: 0;
 }
 
 /* On hover, add a black background color with a little bit see-through */
@@ -125,10 +138,10 @@ img {
 
 .title {
   font-size: 25px;
-  padding: 3px 20vw;
+  padding: 3px 12px;
   position: relative;
   width: 100%;
-  text-align: left;
+  text-align: center;
   font-family: 'Playfair Display', serif;
   color: #b20005;
 
@@ -171,7 +184,7 @@ img {
     font-smoothing:antialiased;
 }
 
-.bodytext-skinny{
+.bodytext-skinny {
   font-size: 15px;
   color: 282828;
   font-weight: 400;
@@ -242,7 +255,27 @@ a:active {
 
 /* On smaller screens, decrease text size */
 @media only screen and (max-width: 300px) {
-  .prev, .next,.text {font-size: 15px}
+  .prev1, .next1,.text {font-size: 15px}
+}
+
+@media only screen and (max-width: 1200px) {
+  img {max-height: 30vh; min-height: 30vh;}
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: transparent;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: transparent;
 }
 </style>
 </head>
@@ -252,61 +285,112 @@ a:active {
 
 <br>
 <br>
-
+ 
 <div class="nav">
   <a class="navSub" href="https://kimfengphotography.tumblr.com/gallery">art practice</a>
   <a class="navSub" href="https://kimfengphotography.tumblr.com/documentation-work">documentation work</a>
   <a class="navSub" href="https://kimfengphotography.tumblr.com/about">about</a>
 </div>
 
-<p class="title">Contact</p>
-<p class="bodytext">
-kimfengphotography@outlook.com
-<br>
-<br>
-<a href=https://www.instagram.com/kimfengphotography/>Instagram</a>
-<br>
-<a href=https://www.flickr.com/photos/200107824@N05/albums>Flickr</a>
-</p>
-<br>
-
-<p class="title">Exhibitions</p>
-<p class="bodytext">
-2024 — On Process, VCA Artspace.
-<br>
-<br>
-2023 — Crabs In A Bucket, VCA Artspace.
-<br>
-<br>
-2019 — Hypervision exhibited finalist in experimental / mixed media</a>.
-<br>
-<br>
-2017 — Young Originals.
-<br>
-<br>
-2017 — Atwell Youth Art Awards exhibited finalist.
-</p>
-<br>
-
-<p class="title">Publications</p>
-<p class="bodytext">
-2020 — Skin Magazine Issue 2</a>.
-<br>
-<br>
-2019 — Goshi Magazine Issue 1</a>.
-</p>
-<br>
-
-<p class="title">Website Credits</p>
-<p class="bodytext">
-Original theme used for the homepage created by <a href="https://odeysseus.tumblr.com/">Odysseus Themes</a>.
-<br>
-<br>
-All other pages coded by Katrina Esdale.
-</p>
+<p class="title"><strong>Plenty Gorge Park</strong></p>
+<p class="subtitle"><em>2023</em></p>
 
 <br>
+
+<!-- slideshow -->
+<div class="slideshow-container">
+
+<div class="container">
+  <div class="mySlides1 fade">
+    <img src="https://live.staticflickr.com/65535/53548033687_7ae57dff0c_o.jpg" style="width:100%">
+    <div class="centeredButtons">
+        <a class="prev1" onclick="plusSlides(-1,0)">&#10094;</a>
+        <a class="next1" onclick="plusSlides(1,0)">&#10095;</a>
+    </div>
+    <div class="bodytext-centre">Kodak TMAX 100 135
+    <br>2022
+    <br>
+    <br>Gelatin silver print
+    <br>Ilford RC Pearl, W40×H30cm
+    <br>2023
+    </div>
+  </div>
+
+  <div class="mySlides1 fade">
+    <img src="https://live.staticflickr.com/65535/53549342740_7ae57dff0c_o.jpg" style="width:100%">
+    <div class="centeredButtons">
+        <a class="prev1" onclick="plusSlides(-1,0)">&#10094;</a>
+        <a class="next1" onclick="plusSlides(1,0)">&#10095;</a>
+    </div>
+    <div class="bodytext-centre">Kodak TMAX 100 135
+    <br>2022
+    <br>
+    <br>Gelatin silver print
+    <br>Ilford RC Pearl, W40×H30cm
+    <br>2023
+    </div>
+  </div>
+
+  <div class="mySlides1 fade">
+    <img src="https://live.staticflickr.com/65535/53548905796_573cc2d4c6_o.jpg" style="width:100%">
+    <div class="centeredButtons">
+        <a class="prev1" onclick="plusSlides(-1,0)">&#10094;</a>
+        <a class="next1" onclick="plusSlides(1,0)">&#10095;</a>
+    </div>
+    <div class="bodytext-centre">Kodak Gold 200 135
+    <br>2022
+    <br>
+    <br>C-type print
+    <br>Fujicolour Crystal Lustre, W40×H30cm
+    <br>2023
+    </div>
+  </div>
+
+  <div class="mySlides1 fade">
+    <img src="https://live.staticflickr.com/65535/53546808353_91458eabab_o.jpg" style="width:100%">
+    <div class="centeredButtons">
+        <a class="prev1" onclick="plusSlides(-1,0)">&#10094;</a>
+        <a class="next1" onclick="plusSlides(1,0)">&#10095;</a>
+    </div>
+    <div class="bodytext-centre">Kodak TMAX 100 135
+    <br>2022
+    <br>
+    <br>Gelatin silver print
+    <br>Ilford RC Pearl, W40×H30cm
+    <br>2023
+    </div>
+  </div>
+
+</div>
 <br>
+
+
+<script>
+let slideIndex = [1,1];
+let slideId = ["mySlides1"]
+showSlides(1, 0);
+
+function plusSlides(n, no) {
+  showSlides(slideIndex[no] += n, no);
+}
+
+function showSlides(n, no) {
+  let i;
+  let x = document.getElementsByClassName(slideId[no]);
+  if (n > x.length) {slideIndex[no] = 1}    
+  if (n < 1) {slideIndex[no] = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  x[slideIndex[no]-1].style.display = "block";  
+}
+</script>
+
+<br>
+<br>
+<br>
+<br>
+
 
 </body>
 </html> 
