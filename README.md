@@ -48,13 +48,17 @@
 
 * {box-sizing: border-box}
 body {font-family: Verdana, sans-serif; margin:0}
-.mySlides, .mySlides2 {display: none}
+.mySlides1 .mySlides2 {display: none}
 img {vertical-align: middle;}
 
 /* Slideshow container */
 .slideshow-container {
     height: 100%;
     width: 100%;
+}
+
+#container1 {
+    position:absolute;
 }
 
 #container2 {
@@ -96,7 +100,7 @@ img {
 }
 
 /* Next & previous buttons */
-.prev1, .next1, .prev2, .next2, .prev3, .next3, .prev4, .next4, .prev5, .next5 {
+.prev, .next {
   text-align: center;
   cursor: pointer;
   position: relative;
@@ -112,14 +116,32 @@ img {
 }
 
 /* Position the "next button" to the right */
-.next1, .next2, .next3, .next4, .next5 {
+.next {
   right: 0;
   border-radius: 3px 0 0 3px;
 }
 
-.prev1 {
-    left: 0;
-}
+/* Next & previous buttons */
+/*.prev1, .next1, .prev2, .next2, .prev3, .next3, .prev4, .next4, .prev5, .next5 {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: black;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}*/
+
+/* Position the "next button" to the right */
+/*.next1, .next2, .next3, .next4, .next5 {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}*/
 
 /* On hover, add a black background color with a little bit see-through */
 /* .prev:hover, .next:hover {
@@ -184,7 +206,7 @@ img {
     font-smoothing:antialiased;
 }
 
-.bodytext-skinny {
+.bodytext-skinny{
   font-size: 15px;
   color: 282828;
   font-weight: 400;
@@ -255,7 +277,7 @@ a:active {
 
 /* On smaller screens, decrease text size */
 @media only screen and (max-width: 300px) {
-  .prev1, .next1,.text {font-size: 15px}
+  .prev, .next,.text {font-size: 15px}
 }
 
 @media only screen and (max-width: 1200px) {
@@ -292,83 +314,222 @@ a:active {
   <a class="navSub" href="https://kimfengphotography.tumblr.com/about">about</a>
 </div>
 
-<p class="title"><strong>Plenty Gorge Park</strong></p>
-<p class="subtitle"><em>2023</em></p>
-
-<br>
+<p class="title"><strong>Antara</strong></p>
+<p class="subtitle"><em>2024</em></p>
 
 <!-- slideshow -->
-<div class="slideshow-container">
+<div class="slideshow-container" id="container1">
 
 <div class="container">
-  <div class="mySlides1 fade">
-    <img src="https://live.staticflickr.com/65535/53548033687_7ae57dff0c_o.jpg" style="width:100%">
-    <div class="centeredButtons">
-        <a class="prev1" onclick="plusSlides(-1,0)">&#10094;</a>
-        <a class="next1" onclick="plusSlides(1,0)">&#10095;</a>
-    </div>
-    <div class="bodytext-centre">Kodak TMAX 100 135
-    <br>2022
-    <br>
-    <br>Gelatin silver print
-    <br>Ilford RC Pearl, W40×H30cm
-    <br>2023
-    </div>
-  </div>
 
   <div class="mySlides1 fade">
-    <img src="https://live.staticflickr.com/65535/53549342740_7ae57dff0c_o.jpg" style="width:100%">
+    <img src="https://live.staticflickr.com/65535/53708302827_678e2a3f17_o.jpg" style="width:100%">
     <div class="centeredButtons">
-        <a class="prev1" onclick="plusSlides(-1,0)">&#10094;</a>
-        <a class="next1" onclick="plusSlides(1,0)">&#10095;</a>
+        <a class="prev" onclick="plusSlides(-1,0)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1,0)">&#10095;</a>
     </div>
-    <div class="bodytext-centre">Kodak TMAX 100 135
-    <br>2022
-    <br>
-    <br>Gelatin silver print
-    <br>Ilford RC Pearl, W40×H30cm
-    <br>2023
-    </div>
-  </div>
+    <div class="subtitle">Kampung Bukit Cina, Melaka</div>
+        <div class="bodytext-centre">Kodak Vision 3 250D 120
+            <br>December 2023
+            <br>
+            <br>C-type print
+            <br>Kodak Endura, W40xH30cm
+            <br>May 2024</div>
+      </div>
 
   <div class="mySlides1 fade">
-    <img src="https://live.staticflickr.com/65535/53548905796_573cc2d4c6_o.jpg" style="width:100%">
+    <img src="https://live.staticflickr.com/65535/53709219696_3709ca914f_o.jpg" style="width:100%">
     <div class="centeredButtons">
-        <a class="prev1" onclick="plusSlides(-1,0)">&#10094;</a>
-        <a class="next1" onclick="plusSlides(1,0)">&#10095;</a>
+        <a class="prev" onclick="plusSlides(-1,0)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1,0)">&#10095;</a>
     </div>
-    <div class="bodytext-centre">Kodak Gold 200 135
-    <br>2022
-    <br>
-    <br>C-type print
-    <br>Fujicolour Crystal Lustre, W40×H30cm
-    <br>2023
-    </div>
-  </div>
+    <div class="subtitle">Ah Chor (1919–)</div>
+    <div class="bodytext-centre">Ilford HP5 120
+            <br>December 2023
+            <br>
+            <br>Silver gelatin print
+            <br>Ilford RC Pearl, W40xH30cm
+            <br>March 2024</div>
+      </div>
 
   <div class="mySlides1 fade">
-    <img src="https://live.staticflickr.com/65535/53546808353_91458eabab_o.jpg" style="width:100%">
+    <img src="https://live.staticflickr.com/65535/53709648300_11bc58588e_o.jpg" style="width:100%">
     <div class="centeredButtons">
-        <a class="prev1" onclick="plusSlides(-1,0)">&#10094;</a>
-        <a class="next1" onclick="plusSlides(1,0)">&#10095;</a>
+        <a class="prev" onclick="plusSlides(-1,0)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1,0)">&#10095;</a>
     </div>
-    <div class="bodytext-centre">Kodak TMAX 100 135
-    <br>2022
-    <br>
-    <br>Gelatin silver print
-    <br>Ilford RC Pearl, W40×H30cm
-    <br>2023
+    <div class="subtitle">Sungai Sitiawan Mangrove</div>
+        <div class="bodytext-centre">Kodak Vision 3 250D 120
+            <br>December 2023
+            <br>
+            <br>C-type print
+            <br>Kodak Endura, W40xH30cm
+            <br>May 2024</div>
+      </div>
+
+  <div class="mySlides1 fade">
+    <img src="https://live.staticflickr.com/65535/53709427178_30338fcdea_o.jpg" style="width:100%">
+    <div class="centeredButtons">
+        <a class="prev" onclick="plusSlides(-1,0)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1,0)">&#10095;</a>
     </div>
-  </div>
+    <div class="subtitle">Kampung Cina, Sitiawan</div>
+    <div class="bodytext-centre">Ilford HP5 120
+            <br>December 2023
+            <br>
+            <br>Silver gelatin print
+            <br>Ilford RC Pearl, W40xH30cm
+            <br>March 2024</div>
+    </div>
+
+  <div class="mySlides1 fade">
+    <img src="https://live.staticflickr.com/65535/53709648405_24bb7a5195_b.jpg" style="width:100%">
+    <div class="centeredButtons">
+        <a class="prev" onclick="plusSlides(-1,0)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1,0)">&#10095;</a>
+    </div>
+    <div class="subtitle">Kampung Cina, Sitiawan</div>
+        <div class="bodytext-centre">Kodak Vision 3 250D 120
+            <br>December 2023
+            <br>
+            <br>C-type print
+            <br>Kodak Endura, W40xH30cm
+            <br>May 2024</div>
+     </div>
+
+  <div class="mySlides1 fade">
+    <img src="https://live.staticflickr.com/65535/53708302767_e17dd92163_o.jpg" style="width:100%">
+    <div class="centeredButtons">
+        <a class="prev" onclick="plusSlides(-1,0)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1,0)">&#10095;</a>
+    </div>
+    <div class="subtitle">Ikan Bilis, Sungai Pinang Kecil, Pulau Pangkor</div>
+        <div class="bodytext-centre">Ilford HP5 120
+            <br>December 2023
+            <br>
+            <br>Silver gelatin print
+            <br>Ilford RC Pearl, W40xH30cm
+            <br>March 2024</div>
+     </div>
+
+  <div class="mySlides1 fade">
+    <img src="https://live.staticflickr.com/65535/53803093117_6250295f19_b.jpg" style="width:100%">
+    <div class="centeredButtons">
+        <a class="prev" onclick="plusSlides(-1,0)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1,0)">&#10095;</a>
+    </div>
+    <div class="subtitle">Roomsheet</div>
+        <div class="bodytext-centre">Screen print on Hahnemuhle
+            <br>Set of 9, W22xH16cm each
+            <br>May 2024<br><br><br><br></div>
+     </div>
+
+  <div class="mySlides1 fade">
+    <img src="https://live.staticflickr.com/65535/53756822378_a91945e95a_o.jpg" style="width:100%">
+    <div class="centeredButtons">
+        <a class="prev" onclick="plusSlides(-1,0)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1,0)">&#10095;</a>
+    </div>
+        <div class="subtitle">Darkroom prints</div>
+        <div class="bodytext-centre">Installation views<br><br><br><br><br><br></div>
+     </div>
+
+  <div class="mySlides1 fade">
+    <img src="https://live.staticflickr.com/65535/53756947984_8f7bfa126e_o.jpg" style="width:100%">
+    <div class="centeredButtons">
+        <a class="prev" onclick="plusSlides(-1,0)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1,0)">&#10095;</a>
+    </div>
+        <div class="subtitle">Darkroom prints</div>
+        <div class="bodytext-centre">Installation views<br><br><br><br><br><br></div>
+     </div>
 
 </div>
+
+<br>
+<br>
+<br>
 <br>
 
+<div class="slideshow-container" id="container2">
+
+<div class="container">
+
+  <div class="mySlides2 fade">
+    <img src="https://live.staticflickr.com/65535/53708306727_68326f22e5_k.jpg" style="width:100%">
+    <div class="centeredButtons">
+        <a class="prev" onclick="plusSlides(-1,1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1,1)">&#10095;</a>
+    </div>
+    <div class="subtitle">Cili Kari Rempah</div>
+        <div class="bodytext-centre">Kodak Gold 135
+            <br>2019
+            <br>Scan</div>
+     </div>
+
+  <div class="mySlides2 fade">
+    <img src="https://live.staticflickr.com/65535/53756822408_29b5b35f11_o.jpg" style="width:100%">
+    <div class="centeredButtons">
+        <a class="prev" onclick="plusSlides(-1,1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1,1)">&#10095;</a>
+    </div>
+        <div class="subtitle">Cili Kari Rempah</div>
+        <div class="bodytext-centre">Installation view<br><br><br></div>
+     </div>
+     
+</div>
+
+<br>
+<br>
+<br>
+<br>
+
+<div class="slideshow-container" id="container3">
+
+<div class="container">
+
+  <div class="mySlides3 fade">
+    <img src="https://live.staticflickr.com/65535/53755713922_308931789a_o.jpg" style="width:100%">
+    <div class="centeredButtons">
+        <a class="prev" onclick="plusSlides(-1,2)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1,2)">&#10095;</a>
+    </div>
+    <div class="subtitle">Blindboxes</div>
+        <div class="bodytext-centre">May 2024
+        <br>Set of 8, W28xH28xD13cm each.
+        <br><br>Magnetic closure cardboard boxes, flyscreen, cheesecloth, polyester thread, cloth tape, LED tea lights, tissue, assorted ingredients (daun limau purut, serai, daun kesum, udang kering, bawang putih, bawang merah kecil, daun kari, kerisik).</div>
+     </div>
+     
+       <div class="mySlides3 fade">
+    <img src="https://live.staticflickr.com/65535/53756822383_ab64441481_o.jpg" style="width:100%">
+    <div class="centeredButtons">
+        <a class="prev" onclick="plusSlides(-1,2)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1,2)">&#10095;</a>
+    </div>
+    <div class="subtitle">Blindboxes</div>
+        <div class="bodytext-centre">Installation views in the low-light room.
+        <br><br>Playing on speakers: 1 minute looping audio of myself talking in Manglish combined with samples of my Mum doing food prep. Script written in collaboration with my Mum, Aunty Joanne, and Farah.</div>
+     </div>
+
+       <div class="mySlides3 fade">
+    <img src="https://live.staticflickr.com/65535/53756622841_9a35b3a68b_o.jpg" style="width:100%">
+    <div class="centeredButtons">
+        <a class="prev" onclick="plusSlides(-1,2)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1,2)">&#10095;</a>
+    </div>
+    <div class="subtitle">Blindboxes</div>
+        <div class="bodytext-centre">Installation views in the low-light room.
+        <br><br>Playing on speakers: 1 minute looping audio of myself talking in Manglish combined with samples of my Mum doing food prep. Script written in collaboration with my Mum, Aunty Joanne, and Farah.</div>
+     </div>
+
+</div>
 
 <script>
-let slideIndex = [1,1];
-let slideId = ["mySlides1"]
+let slideIndex = [1,1,1];
+let slideId = ["mySlides1", "mySlides2", "mySlides3"]
 showSlides(1, 0);
+showSlides(1, 1);
+showSlides(1, 2);
 
 function plusSlides(n, no) {
   showSlides(slideIndex[no] += n, no);
@@ -385,12 +546,6 @@ function showSlides(n, no) {
   x[slideIndex[no]-1].style.display = "block";  
 }
 </script>
-
-<br>
-<br>
-<br>
-<br>
-
 
 </body>
 </html> 
