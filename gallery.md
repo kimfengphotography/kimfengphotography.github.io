@@ -14,10 +14,6 @@
 
 <style>
     
-.anchorjs-link {
-  display: none !Important;
-}
-    
 .nav {
     display: block;
     font-size: 13px;
