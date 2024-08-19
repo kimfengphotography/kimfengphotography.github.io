@@ -13,6 +13,11 @@
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
 
 <style>
+    
+.anchorjs-link {
+  display: none !Important;
+}
+    
 .nav {
     display: block;
     font-size: 13px;
