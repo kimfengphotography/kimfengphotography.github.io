@@ -14,7 +14,7 @@
 
 <style>
 .nav {
-    display: block;
+    display: inline;
     position: relative;
     font-size: 13px;
     color: #646060;
@@ -25,7 +25,6 @@
     line-height: 180%;
     float: right;
     margin-left:10px;
-    text-align: justify;
 }
 
 .navSub {
@@ -37,7 +36,7 @@
 }
 
 #homeTitle {
-    position: relative;
+    position: absolute;
   font-size: 17px;
   font-family: 'Playfair Display', serif;
   color: #b20005;
@@ -48,7 +47,6 @@
   padding-right:10px;
     display:inline;
     border-bottom:1px solid #eee;
-    text-align: justify;
 }
 
 * {box-sizing: border-box}
@@ -60,8 +58,9 @@ img {
   width: auto;
   /*position: relative;*/
   margin: auto;
-  display: inline;
+  display: block;
   object-fit: contain;
+    vertical-align: middle;
 }
 
 /* Caption text */
