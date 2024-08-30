@@ -13,19 +13,20 @@
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
 
 <style>
+  
+  
 .nav {
-    display: inline-block;
-    position: relative;
+  	display: block;
     font-size: 13px;
     color: #646060;
     font-family: 'Open Sans', serif;
     padding-top: 10px;
     padding-right:20px;
     padding-bottom: 9px;
-    /*line-height: 180%;*/
-    /*float: right;*/
-    margin:auto;
+    float: right;
 }
+  
+.nav a { margin-left:10px; }
     
 .navSub {
     padding-left:20px;
@@ -35,25 +36,23 @@
     display: none;
 }
 
-#homeTitle {
+.homeTitle {
   font-size: 17px;
   font-family: 'Playfair Display', serif;
   color: #b20005;
-  padding-left:20px;
-  padding-top: 10px;
     padding-bottom: 10px;
-  padding-right:10px;
-    display: inline-block;
+    display: block;
     border-bottom:1px solid #eee;
-    margin: auto;
 }
 
 * {box-sizing: border-box}
 body {font-family: Verdana, sans-serif; margin:0}
+  
+#high { width:100%;height:100vh;top:-100px;margin-bottom:-500px;left:0;position:relative; }
 
 img {
-  max-width: 100%;
-  max-height: 70vh;
+  width: 100%;
+  height: 400px;
   width: auto;
   /*position: relative;*/
   margin: auto;
@@ -153,10 +152,15 @@ header {
     left:50%;
     transform:translate(-50%,-50%);
     position:absolute;
+	margin: auto;
 }
 
 div.a {
   text-indent: 50px;
+}
+
+#redPls {
+  color: #b20005;
 }
 
 a:link, a:visited {
@@ -183,7 +187,7 @@ a:active {
             padding-top: 5px;
             padding-right:10px;
             padding-bottom: 5px;}
-    #homeTitle {font-size: 9px;
+    .homeTitle {font-size: 9px;
                 padding-left:10px;
                 padding-top: 5px;
                 padding-bottom: 5px;
@@ -195,7 +199,7 @@ a:active {
 </head>
 <body>
 
-<div>
+<div id="high>
 <header>
 
 <img src="https://live.staticflickr.com/65535/53549138016_7b9432d067_o.jpg">
@@ -204,7 +208,7 @@ a:active {
 
 
 <div class="centerText">
-<a id="homeTitle" href="kimfengphotography.github.io">kim feng photography</a>
+<a class="homeTitle" id="redPls" href="kimfengphotography.github.io">kim feng photography</a>
 
 <div class="nav">
   <a class="navSub" href="https://kimfengphotography.github.io/gallery">art practice</a>
@@ -213,7 +217,7 @@ a:active {
 </div>
 </div>
 
-  </header>
+</header>
 
 </div>
 
