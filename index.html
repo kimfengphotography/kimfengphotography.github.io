@@ -13,70 +13,150 @@
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
 
 <style>
-
-body {overflow: hidden}
-  
-#high { width:100%;
-  			height:100vh;
-  			top:-100px;
-  			margin-bottom:-500px;
-  			left:0;
-  			position:relative; }
-  
-.stuff {
-  margin: 100px auto;
-  width: 55vw;
-  }
-  
+    
 .nav {
-  	display: inline-block;
+    display: block;
     font-size: 13px;
     color: #646060;
     font-family: 'Open Sans', serif;
-    padding-top: 12px;
+    border-bottom: 1px solid #eee;
+    padding-top: 10px;
     padding-bottom: 9px;
-    float: right;
+    padding-right:20px;
+    line-height: 180%;
+    text-align: left;
 }
-  
-.nav a { margin-left:10px; }
-    
+
 .navSub {
-    padding-left: 20px;
+    padding-left:20px;
 }
 
 .active {
     display: none;
 }
 
-.homeTitle {
-  font-size: 17px;
+#homeTitle {
+  position: fixed;
+  font-size: 18px;
   font-family: 'Playfair Display', serif;
   color: #b20005;
-  	padding-top: 8px;
-    padding-bottom: 15px;
-    display: block;
-    border-bottom:1px solid #eee;
+  text-align: left;
+  padding-left:20px;
+  padding-top: 10px;
+  padding-bottom: 9px;
+  padding-right:10px;
 }
-  
+
 * {box-sizing: border-box}
 body {font-family: Verdana, sans-serif; margin:0}
-  
-img {
-  width: 55vw;
-  height: auto;
-  /*position: relative;*/
-  margin: auto;
-  display: block;
-  object-fit: contain;
-    vertical-align: middle;
+.mySlides1 .mySlides2 {display: none}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+    height: 100%;
+    width: 100%;
 }
-  
+
+#container1 {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    width: 50%
+}
+
+#container2 {
+    position:absolute;
+}
+
+#container3 {
+    position:absolute;
+}
+
+#container4 {
+    position:absolute;
+}
+
+#container5 {
+    position:absolute;
+}
+
+#container6 {
+    position:absolute;
+}
+
+img {
+  max-width: 100%;
+  max-height: 70vh;
+  width: auto;
+  position: relative;
+  margin-top: 1%;
+  margin-bottom: 1%;
+  margin-left: auto;
+  margin-right: auto;
+  object-fit: contain;
+}
+
+.centeredButtons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  text-align: center;
+  cursor: pointer;
+  position: relative;
+  width: auto;
+  padding: 16px;
+  display: inline-block;
+  color: black;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* Next & previous buttons */
+/*.prev1, .next1, .prev2, .next2, .prev3, .next3, .prev4, .next4, .prev5, .next5 {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: black;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}*/
+
+/* Position the "next button" to the right */
+/*.next1, .next2, .next3, .next4, .next5 {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}*/
+
+/* On hover, add a black background color with a little bit see-through */
+/* .prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+} */
+
 /* Caption text */
 .text {
   font-size: 20px;
-  padding: 3px 12px;
-  position: absolute;
-  width: 100%;
+  padding: 3px;
+  position: relative;
   text-align: center;
   font-family: 'Playfair Display', serif;
 }
@@ -97,7 +177,7 @@ img {
   padding: 3px 12px;
   position: relative;
   width: 100%;
-  text-align: center;
+  text-align: left;
   font-family: 'Playfair Display', serif;
 }
 
@@ -105,7 +185,7 @@ img {
   font-size: 15px;
   color: 282828;
   font-weight: 400;
-  padding: 3px 20vw;
+  padding: 3px ;
   position: relative;
   width: 100%;
   text-align: left;
@@ -143,26 +223,20 @@ img {
     font-smoothing:antialiased;
 }
 
-/* Centered Image Code */
-
-header {
-    width:100%;
-    top:50%;
-    left:50%;
-    transform:translate(-50%,-50%);
-    position:absolute;
-	margin: auto;
-}
-
 div.a {
   text-indent: 50px;
 }
 
-#redPls {
-  padding-bottom: 10px;
-  padding-top: 10px;
-  color: #b20005;
+/* old bodytext
+.bodytext {
+  font-size: 15px;
+  padding: 3px 12px;
+  position: relative;
+  width: 100%;
+  text-align: center;
+  font-family: 'Playfair Display', serif;
 }
+*/
 
 a:link, a:visited {
   color: #646060;
@@ -182,45 +256,248 @@ a:active {
   text-decoration: underline;
 }
 
-@media only screen and (max-width: 1200px) {
-  .stuff {max-width: 90vw; min-width: 90vw; margin-top: 80px;}
-  img {max-width: 90vw; min-width: 90vw;}
-    .nav {font-size: 6px;
-            padding-top: 5px;
-            padding-bottom: 5px;}
-    .homeTitle {font-size: 7px;
-                padding-top: 5px;
-                padding-bottom: 5px;
-                padding-right:5px;}
-    .navSub {padding-left: 5px;}
-  	#redPls {padding-bottom: 5px; padding-top: 5px;}
+.audio-video {
+    text-align: center;
 }
 
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+/* @-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+} */
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 15px}
+}
+
+@media only screen and (max-width: 1200px) {
+  img {max-height: 30vh; min-height: 30vh;}
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: transparent;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: transparent;
+}
 </style>
 </head>
 <body>
 
-<div class="stuff">
-  
-<div id="high">
-<header>
+<a id="homeTitle" href="kimfengphotography.github.io">kim feng photography</a>
 
-<img src="https://live.staticflickr.com/65535/53549138016_7b9432d067_o.jpg">
-                                                                           
+<br>
+<br>
+
 <div class="nav">
   <a class="navSub" href="https://kimfengphotography.github.io/gallery">art practice</a>
   <a class="navSub" href="https://kimfengphotography.github.io/documentation-work">documentation work</a>
   <a class="navSub" href="https://kimfengphotography.github.io/about">about</a>
 </div>
 
-<a class="homeTitle" id="redPls" href="kimfengphotography.github.io">kim feng photography</a>
+
+
+<p class="title">Gallery</p>
 
 
 
-</header>
+<!-- slideshow -->
+<div class="slideshow-container" id="container1">
+
+<div class="container">
+
+  <div class="mySlides1 fade">
+    <img src="https://live.staticflickr.com/65535/53708302827_678e2a3f17_o.jpg" style="width:100%">
+    <div class="centeredButtons">
+        <a class="prev" onclick="plusSlides(-1,0)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1,0)">&#10095;</a>
+    </div>
+    <div class="text"><a href="https://kimfengphotography.tumblr.com/antara">Antara</a></div>
+  </div>
+
+
+  <div class="mySlides1 fade">
+    <img src="https://live.staticflickr.com/65535/53549114543_267cda0648_o.jpg" style="width:100%">
+    <div class="centeredButtons">
+        <a class="prev" onclick="plusSlides(-1,0)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1,0)">&#10095;</a>
+    </div>
+    <div class="text"><a href="https://kimfengphotography.tumblr.com/melbourne-cemetery">Melbourne General Cemetery</a></div>
+  </div>
+
+  <div class="mySlides1 fade">
+    <img src="https://live.staticflickr.com/65535/53548905796_573cc2d4c6_o.jpg" style="width:100%">
+    <div class="centeredButtons">
+        <a class="prev" onclick="plusSlides(-1,0)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1,0)">&#10095;</a>
+    </div>
+    <div class="text"><a href="https://kimfengphotography.tumblr.com/plenty-gorge">Plenty Gorge Park</a></div>
+  </div>
+
+  <div class="mySlides1 fade">
+    <img src="https://live.staticflickr.com/65535/53549278169_09a4c10407_o.jpg" style="width:100%">
+    <div class="centeredButtons">
+        <a class="prev" onclick="plusSlides(-1,0)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1,0)">&#10095;</a>
+    </div>
+    <div class="text"><a href="https://kimfengphotography.tumblr.com/kilcunda">George Bass Coastal Walk: Kilcunda to Punchbowl</a></div>
+  </div>
+
+  <div class="mySlides1 fade">
+    <img src="https://live.staticflickr.com/65535/53548073297_cd0d35ce7b_o.jpg" style="width:100%">
+    <div class="centeredButtons">
+        <a class="prev" onclick="plusSlides(-1,0)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1,0)">&#10095;</a>
+    </div>
+    <div class="text"><a href="https://kimfengphotography.tumblr.com/ferntree">Ferntree Gully Park</a></div>
+  </div>
+
+  <div class="mySlides1 fade">
+    <img src="https://live.staticflickr.com/65535/53549294764_c6109448eb_o.jpg" style="width:100%">
+    <div class="centeredButtons">
+        <a class="prev" onclick="plusSlides(-1,0)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1,0)">&#10095;</a>
+    </div>
+    <div class="text"><a href="https://kimfengphotography.tumblr.com/swan-valley">Swan Valley</a></div>
+  </div>
+
+  <div class="mySlides1 fade">
+    <img src="https://live.staticflickr.com/65535/53549138016_e559c44c6b_b.jpg" style="width:100%">
+    <div class="centeredButtons">
+        <a class="prev" onclick="plusSlides(-1,0)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1,0)">&#10095;</a>
+    </div>
+    <div class="text"><a href="https://live.staticflickr.com/65535/53549138016_7b9432d067_o.jpg">Switzerland, Germany, Austria</a></div>
+  </div>
+
+  <div class="mySlides1 fade">
+    <img src="https://live.staticflickr.com/65535/53549367888_5edc1de0f2_o.jpg" style="width:100%">
+    <div class="centeredButtons">
+        <a class="prev" onclick="plusSlides(-1,0)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1,0)">&#10095;</a>
+    </div>
+    <div class="text"><a href="https://kimfengphotography.tumblr.com/new-york">New York</a></div>
+  </div>
 
 </div>
 
+<script>
+let slideIndex = [1,1];
+let slideId = ["mySlides1", "mySlides2"]
+showSlides(1, 0);
+showSlides(1, 1);
+
+function plusSlides(n, no) {
+  showSlides(slideIndex[no] += n, no);
+}
+
+function showSlides(n, no) {
+  let i;
+  let x = document.getElementsByClassName(slideId[no]);
+  if (n > x.length) {slideIndex[no] = 1}    
+  if (n < 1) {slideIndex[no] = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  x[slideIndex[no]-1].style.display = "block";  
+}
+</script>
+
+</body>
+</html> 
+
+<br>
+<br>
+<br>
+<br>
+
+<div class="bodytext-container">
+
+<p class="subtitle">V.</p>
+<p class="bodytext">
+<a href="https://kimfengphotography.tumblr.com/antara"> 2024 — Antara</a>
+</p>
+<br>
+
+
+<p class="subtitle">IV.</p>
+<p class="bodytext">
+<a href="https://kimfengphotography.tumblr.com/melbourne-cemetery"> 2023 — Melbourne General Cemetery</a>
+<br>
+<br>
+<a href="https://kimfengphotography.tumblr.com/camperdown-cemetery"> 2023 — Camperdown Cemetery</a>
+<br>
+<br>
+<a href="https://kimfengphotography.tumblr.com/plenty-gorge"> 2022 — Plenty Gorge</a>
+</p>
+<br>
+
+<p class="subtitle">III.</p>
+<p class="bodytext">
+<a href="https://kimfengphotography.tumblr.com/kilcunda"> 2022 — George Bass Coastal Walk: Kilcunda to Punchbowl</a>
+<br>
+<br>
+<a href="https://kimfengphotography.tumblr.com/ferntree"> 2022 — Ferntree Gully Park</a>
+<br>
+<br>
+<a href="https://kimfengphotography.tumblr.com/swan-valley">2022 — Swan Valley </a>
+<br>
+<br>
+<a href="https://kimfengphotography.tumblr.com/royal-botanical-gardens">2022 — Royal Botanical Gardens</a>
+</p>
+<br>
+
+<p class="subtitle">II.</p>
+<p class="bodytext">
+<a href="https://kimfengphotography.tumblr.com/fairfield">2021 — Fairfield Park</a>
+<br>
+<br>
+<a href="https://kimfengphotography.tumblr.com/araluen">2021 — Araluen</a>
+<br>
+<br>
+<a href="https://kimfengphotography.tumblr.com/coolbellup-walliabup">2021 — Coolbellup & Walliabup</a>
+<br>
+<br>
+<a href="https://kimfengphotography.tumblr.com/male-gaze">2021 — The Male Gaze</a>
+</p>
+<br>
+
+<p class="subtitle">I.</p>
+<p class="bodytext">
+<a href="https://kimfengphotography.tumblr.com/switzerland-germany-austria">2019 — Switzerland, Germany, Austria</a>
+<br>
+<br>
+<a href="https://kimfengphotography.tumblr.com/wardandi">2018 — Wardandi Country</a>
+<br>
+<br>
+<a href="https://kimfengphotography.tumblr.com/new-york">2018 — New York</a>
+<br>
+<br>
+<br>
+
+</p>
 </div>
 
 </body>
