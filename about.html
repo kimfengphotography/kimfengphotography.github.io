@@ -280,6 +280,42 @@ a:active {
   <a class="navSub" href="https://kimfengphotography.com/about">about</a>
 </div>
 
+<div class="slideshow-container">
+
+<div class="container">
+  <div class="mySlides fade">
+    <img src="https://github.com/kimfengphotography/kimfengphotography.github.io/blob/main/images/Antara/2025.06.18%20Performance%206.jpg?raw=true" style="width:100%">
+    <div class="text"><i>Untitled</i>, Performance, Antara, George Paton Gallery, 2025</div>
+  </div>
+
+</div>
+<br>
+
+
+<script>
+let slideIndex = [1,1];
+let slideId = ["mySlides"]
+showSlides(1, 0);
+
+function plusSlides(n, no) {
+  showSlides(slideIndex[no] += n, no);
+}
+
+function showSlides(n, no) {
+  let i;
+  let x = document.getElementsByClassName(slideId[no]);
+  if (n > x.length) {slideIndex[no] = 1}    
+  if (n < 1) {slideIndex[no] = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  x[slideIndex[no]-1].style.display = "block";  
+}
+</script>
+<br>
+<br>
+
+
 <p class="title">Contact</p>
 <table style="border-style: none;">
   <tr>
