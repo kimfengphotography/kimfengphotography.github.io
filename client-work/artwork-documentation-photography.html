@@ -126,7 +126,7 @@ img {
 }
 
 /* Next & previous buttons */
-/*.prev1, .next1, .prev2, .next2, .prev3, .next3, .prev4, .next4, .prev5, .next5, .prev6, .next6, .prev7, .next7, .prev8, .next8, .prev9, .next9 , .prev10, .next10 {
+/*.prev1, .next1, .prev2, .next2, .prev3, .next3, .prev4, .next4, .prev5, .next5, .prev6, .next6, .prev7, .next7, .prev8, .next8, .prev9, .next9, .prev10, .next10 , .prev11, .next11{
   cursor: pointer;
   position: absolute;
   top: 50%;
@@ -142,7 +142,7 @@ img {
 }*/
 
 /* Position the "next button" to the right */
-/*.next1, .next2, .next3, .next4, .next5 {
+/*.next1, .next2, .next3, .next4, .next5, .next6, .next7, .next8, .next9, .next10, .next11 {
   right: 0;
   border-radius: 3px 0 0 3px;
 }*/
@@ -485,6 +485,44 @@ a:active {
       </div>
       <div class="bodytext-centre">Soyo Paek and Perin Gulsen, live drawing performance, 2025
           <br>Soyo Paek, <i>lines before meaning</i>, Trocadero Projects, Footscray, VIC</div>
+        </div>
+   </div>
+
+<br>
+<br>
+<br>
+<br>
+
+<div class="slideshow-container" id="container11">
+
+<div class="container">
+    <div class="mySlides11 fade">
+      <img src="https://github.com/kimfengphotography/kimfengphotography.github.io/blob/main/images/client-work/2025.07.03%20Kari%203.jpg?raw=true" style="width:100%">
+      <div class="centeredButtons">
+          <a class="prev" onclick="plusSlides(-1,10)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1,10)">&#10095;</a>
+      </div>
+      <div class="bodytext-centre">Kari Lee McInneny-McRae, <i>Because Access Isn’t Real If I Have to Explain Everything (So Here Is My Foot in Bronze)</i>, 2024</div>
+        </div>
+
+<div class="container">
+    <div class="mySlides11 fade">
+      <img src="https://github.com/kimfengphotography/kimfengphotography.github.io/blob/main/images/client-work/2025.07.03%20Kari%201.jpg?raw=true" style="width:100%">
+      <div class="centeredButtons">
+          <a class="prev" onclick="plusSlides(-1,10)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1,10)">&#10095;</a>
+      </div>
+      <div class="bodytext-centre">Kari Lee McInneny-McRae, <i>Because Access Isn’t Real If I Have to Explain Everything (So Here Is My Foot in Bronze)</i>, 2024</div>
+        </div>
+
+<div class="container">
+    <div class="mySlides11 fade">
+      <img src="https://github.com/kimfengphotography/kimfengphotography.github.io/blob/main/images/client-work/2025.07.03%20Kari%202.jpg?raw=true" style="width:100%">
+      <div class="centeredButtons">
+          <a class="prev" onclick="plusSlides(-1,10)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1,10)">&#10095;</a>
+      </div>
+      <div class="bodytext-centre">Kari Lee McInneny-McRae, <i>Because Access Isn’t Real If I Have to Explain Everything (So Here Is My Foot in Bronze)</i>, 2024</div>
         </div>
    </div>
 
@@ -1530,8 +1568,8 @@ a:active {
 
     
 <script>
-let slideIndex = [1,1,1,1,1,1,1,1,1,1];
-let slideId = ["mySlides1", "mySlides2", "mySlides3", "mySlides4", "mySlides5", "mySlides6", "mySlides7", "mySlides8", "mySlides9", "mySlides10"]
+let slideIndex = [1,1,1,1,1,1,1,1,1,1,1];
+let slideId = ["mySlides1", "mySlides2", "mySlides3", "mySlides4", "mySlides5", "mySlides6", "mySlides7", "mySlides8", "mySlides9", "mySlides10", "mySlides11"]
 showSlides(1, 0);
 showSlides(1, 1);
 showSlides(1, 2);
@@ -1543,6 +1581,7 @@ showSlides(1, 7);
 showSlides(1, 8);
 showSlides(1, 9);
 showSlides(1, 10);
+showSlides(1, 11);
 
 function plusSlides(n, no) {
   showSlides(slideIndex[no] += n, no);
