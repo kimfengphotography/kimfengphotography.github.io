@@ -86,14 +86,20 @@ img {
   object-fit: contain;
 }
 
+.centeredButtons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 /* Next & previous buttons */
 .prev, .next {
+  text-align: center;
   cursor: pointer;
-  position: absolute;
-  top: 50%;
+  position: relative;
   width: auto;
   padding: 16px;
-  margin-top: -22px;
+  display: inline-block;
   color: black;
   font-weight: bold;
   font-size: 18px;
