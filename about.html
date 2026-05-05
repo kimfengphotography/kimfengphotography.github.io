@@ -50,24 +50,11 @@
 * {box-sizing: border-box}
 body {font-family: Verdana, sans-serif; margin:0}
 .mySlides {display: none}
-img {vertical-align: middle;}
 
 /* Slideshow container */
 .slideshow-container {
     height: 100%;
     width: 100%;
-}
-
-img {
-  max-width: 100%;
-  max-height: 70vh;
-  width: auto;
-  position: relative;
-  margin-top: 1%;
-  margin-bottom: 1%;
-  margin-left: auto;
-  margin-right: auto;
-  object-fit: contain;
 }
 
 .slideshow-container-2 {
@@ -82,7 +69,7 @@ img {
   position: relative;
   margin-top: 1%;
   margin-bottom: 1%;
-  margin-left: auto;
+    margin-left: 10vw;
   margin-right: auto;
   object-fit: contain;
 }
@@ -126,13 +113,25 @@ img {
 
 .title {
   font-size: 25px;
-  padding: 3px 20vw;
+  padding: 3px 10vw;
+  margin-left: 35px;
   position: relative;
-  width: 100%;
   text-align: left;
   font-family: 'Playfair Display', serif;
   color: #b20005;
 
+}
+
+.title-next-to-photo {
+  font-size: 25px;
+  padding: 3px 35px;
+  text-align: left;
+  font-family: 'Playfair Display', serif;
+  color: #b20005;
+}
+
+.flex {
+  display: flex;
 }
 
 .subtitle {
@@ -149,6 +148,20 @@ img {
   color: 282828;
   font-weight: 400;
   padding: 3px 20vw;
+  position: relative;
+  width: 100%;
+  text-align: left;
+  font-family: 'Open Sans', serif;
+  -moz-osx-font-smoothing:grayscale;
+    -webkit-font-smoothing:antialiased;
+    font-smoothing:antialiased;
+}
+
+.bodytext-next-to-photo {
+  font-size: 15px;
+  color: 282828;
+  font-weight: 400;
+  padding: 0px 10vw 35px 35px;
   position: relative;
   width: 100%;
   text-align: left;
@@ -205,7 +218,8 @@ table {
   font-size: 15px;
   color: 282828;
   font-weight: 400;
-  padding: 0px 20vw 50px;
+  padding: 0px 10vw 50px;
+  margin: 35px;
   position: relative;
   text-align: left;
   font-family: 'Open Sans', serif;
@@ -213,6 +227,21 @@ table {
     -webkit-font-smoothing:antialiased;
     font-smoothing:antialiased;
   padding-right: 50px;
+}
+
+.table-next-to-photo {
+  font-size: 15px;
+  color: 282828;
+  font-weight: 400;
+  padding: 0px 50px 0px 0px;
+  margin-top: 1em;
+  position: relative;
+  text-align: left;
+  font-family: 'Open Sans', serif;
+  -moz-osx-font-smoothing:grayscale;
+    -webkit-font-smoothing:antialiased;
+    font-smoothing:antialiased;
+  align-items: left;
 }
 
 td {
@@ -264,7 +293,9 @@ a:active {
 /* On smaller screens, decrease text size */
 @media only screen and (max-width: 1200px) {
   .prev, .next,.text {font-size: 15px}
-  .title, .bodytext, table {padding-left: 10vw; padding-right: 10vw;}
+  .title, .bodytext, table, .table-next-to-photo {padding-left: 10vw; padding-right: 10vw; margin-left: 0px;}
+  img {width: 100%; margin-left: 0px;}
+  .flex {display: inline-block;}
 }
 </style>
 </head>
@@ -285,44 +316,14 @@ a:active {
 
 <br>
 
-<div class="slideshow-container">
+<div class="flex">
 
-<div class="container">
-  <div class="mySlides1 fade">
-    <img src="https://github.com/kimfengphotography/kimfengphotography.github.io/blob/main/images/about/2026.04.22%20Self%20Portraits%204%20cropped%202000px.jpg?raw=true" style="width:100%">
-    <div class="bodytext-centre"></div>
-  </div>
+    <img src="https://github.com/kimfengphotography/kimfengphotography.github.io/blob/main/images/about/2026.04.22%20Self%20Portraits%204%20cropped%202000px.jpg?raw=true" style="float: left">
 
-</div>
-<br>
+<div class="flex" style="flex-direction: column; align-self: center;">
 
-
-<script>
-let slideIndex = [1,1];
-let slideId = ["mySlides"]
-showSlides(1, 0);
-
-function plusSlides(n, no) {
-  showSlides(slideIndex[no] += n, no);
-}
-
-function showSlides(n, no) {
-  let i;
-  let x = document.getElementsByClassName(slideId[no]);
-  if (n > x.length) {slideIndex[no] = 1}    
-  if (n < 1) {slideIndex[no] = x.length}
-  for (i = 0; i < x.length; i++) {
-     x[i].style.display = "none";  
-  }
-  x[slideIndex[no]-1].style.display = "block";  
-}
-</script>
-<br>
-<br>
-
-
-<p class="title">Contact</p>
-<table style="border-style: none;">
+<p class="title-next-to-photo" >Contact</p>
+<table class="table-next-to-photo" style="border-style: none;">
   <tr>
     <td><a href="mailto:kimfengphotography@outlook.com">Email</a></td>
   </tr>
@@ -332,8 +333,11 @@ function showSlides(n, no) {
 </table>
 
 
-<p class="title">Bio</p>
-<p class="bodytext">Kim Feng Cheong (b. 2001) is from Whadjuk and Bindjareb land / Perth, WA, and is based in Wurundjeri and Boonwurrung land / Melbourne, VIC. The artist's family is Chinese-Serani from Malaysia and Brunei.</p>
+<p class="title-next-to-photo">Bio</p>
+<p class="bodytext-next-to-photo">Kim Feng Cheong (b. 2001) is from Whadjuk and Bindjareb land / Perth, WA, and is based in Wurundjeri and Boonwurrung land / Melbourne, VIC. The artist's family is Chinese-Serani from Malaysia and Brunei.</p>
+
+</div>
+</div>
 
 <br>
 <br>
