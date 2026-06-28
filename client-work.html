@@ -299,19 +299,12 @@ a:active {
 } */
 
 /* On smaller screens, decrease text size */
-@media only screen and (max-width: 300px) {
-  .prev, .next,.text, .subtitle {font-size: 15px}
+@media only screen and (max-width: 1080px) {
+  .prev, .next,.text {font-size: 15px}
 }
 
 @media only screen and (max-width: 1200px) {
-  img {padding-top: 10vh; max-height: 30vh; min-height: 10vh;}
-  .slideshow-container{height: 100%; width: 100%;}
-  .bodytext{padding: 3px 20vw;}
-  .subtitle{padding: 3px 12px;}
-  .text{padding: 3px 12px;}
-  #container1{position: absolute; width: 100%;}
-  .row{padding:0;}
-  .subtitle-centered{padding: 3px 12px;}
+  img {max-height: 30vh; min-height: 30vh;}
 }
 
 /* The dots/bullets/indicators */
@@ -398,6 +391,21 @@ a:active {
 </div>
 
 <!--legacy table
+    /* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text, .subtitle {font-size: 15px}
+}
+
+@media only screen and (max-width: 1200px) {
+  img {padding-top: 10vh; max-height: 30vh; min-height: 10vh;}
+  .slideshow-container{height: 100%; width: 100%;}
+  .bodytext{padding: 3px 20vw;}
+  .subtitle{padding: 3px 12px;}
+  .text{padding: 3px 12px;}
+  #container1{position: absolute; width: 100%;}
+  .row{padding:0;}
+  .subtitle-centered{padding: 3px 12px;}
+
 <div class="row">
 
 <div class="container">
