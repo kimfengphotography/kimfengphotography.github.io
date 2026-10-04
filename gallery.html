@@ -12,325 +12,8 @@
 <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
 
-<style>
-    
-.nav {
-    display: block;
-    font-size: 13px;
-    color: #646060;
-    font-family: 'Open Sans', serif;
-    border-bottom: 1px solid #eee;
-    padding-top: 10px;
-    padding-bottom: 9px;
-    padding-right:20px;
-    line-height: 180%;
-    text-align: left;
-}
+<link rel="stylesheet" href="styles.css">
 
-.navSub {
-    padding-left:20px;
-}
-
-.active {
-    display: none;
-}
-
-#homeTitle {
-  position: fixed;
-  font-size: 18px;
-  font-family: 'Playfair Display', serif;
-  color: #b20005;
-  text-align: left;
-  padding-left:20px;
-  padding-top: 10px;
-  padding-bottom: 9px;
-  padding-right:10px;
-}
-
-* {box-sizing: border-box}
-body {font-family: Verdana, sans-serif; margin:0}
-.mySlides1 .mySlides2 {display: none}
-img {vertical-align: middle;}
-
-/* Slideshow container */
-.slideshow-container {
-    height: 100%;
-    width: 100%;
-}
-
-#container1 {
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
-    width: 50%
-}
-
-#container2 {
-    position:absolute;
-}
-
-#container3 {
-    position:absolute;
-}
-
-#container4 {
-    position:absolute;
-}
-
-#container5 {
-    position:absolute;
-}
-
-#container6 {
-    position:absolute;
-}
-
-img {
-  max-width: 100%;
-  max-height: 70vh;
-  width: auto;
-  position: relative;
-  margin-top: 1%;
-  margin-bottom: 1%;
-  margin-left: auto;
-  margin-right: auto;
-  object-fit: contain;
-}
-
-.centeredButtons {
-    display: flex;
-    justify-content: center; 
-    align-items: center;
-}
-
-/* Next & previous buttons */
-.prev, .next {
-  text-align: center;
-  cursor: pointer;
-  position: relative;
-  width: auto;
-  padding: 16px;
-  display: inline-block;
-  color: black;
-  font-weight: bold;
-  font-size: 18px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
-}
-
-/* Position the "next button" to the right */
-.next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
-}
-
-/* Next & previous buttons */
-/*.prev1, .next1, .prev2, .next2, .prev3, .next3, .prev4, .next4, .prev5, .next5 {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  padding: 16px;
-  margin-top: -22px;
-  color: black;
-  font-weight: bold;
-  font-size: 18px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
-}*/
-
-/* Position the "next button" to the right */
-/*.next1, .next2, .next3, .next4, .next5 {
-  right: 0;
-  border-radius: 3px 0 0 3px;
-}*/
-
-/* On hover, add a black background color with a little bit see-through */
-/* .prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
-} */
-
-/* Caption text */
-.text {
-  font-size: 20px;
-  padding: 3px;
-  position: relative;
-  text-align: center;
-  font-family: 'Playfair Display', serif;
-}
-
-.title {
-  font-size: 25px;
-  padding: 3px 12px;
-  position: relative;
-  width: 100%;
-  text-align: center;
-  font-family: 'Playfair Display', serif;
-  color: #b20005;
-
-}
-
-.subtitle {
-  font-size: 25px;
-  padding: 3px 20vw;
-  position: relative;
-  width: 100%;
-  text-align: left;
-  font-family: 'Playfair Display', serif;
-  color: #b20005;
-}
-
-.bodytext {
-  font-size: 15px;
-  color: 282828;
-  font-weight: 400;
-  padding: 3px 20vw;
-  position: relative;
-  width: 100%;
-  text-align: left;
-  font-family: 'Open Sans', serif;
-  -moz-osx-font-smoothing:grayscale;
-    -webkit-font-smoothing:antialiased;
-    font-smoothing:antialiased;
-}
-
-.bodytext-centre {
-  font-size: 15px;
-  color: 282828;
-  font-weight: 400;
-  padding: 3px 20vw;
-  position: relative;
-  width: 100%;
-  text-align: center;
-  font-family: 'Open Sans', serif;
-  -moz-osx-font-smoothing:grayscale;
-    -webkit-font-smoothing:antialiased;
-    font-smoothing:antialiased;
-}
-
-.bodytext-skinny{
-  font-size: 15px;
-  color: 282828;
-  font-weight: 400;
-  padding: 3px 30vw;
-  position: relative;
-  width: 100%;
-  text-align: left;
-  font-family: 'Open Sans', serif;
-  -moz-osx-font-smoothing:grayscale;
-    -webkit-font-smoothing:antialiased;
-    font-smoothing:antialiased;
-}
-
-div.a {
-  text-indent: 50px;
-}
-
-/* old bodytext
-.bodytext {
-  font-size: 15px;
-  padding: 3px 12px;
-  position: relative;
-  width: 100%;
-  text-align: center;
-  font-family: 'Playfair Display', serif;
-}
-*/
-
-table {
-  font-size: 15px;
-  color: 282828;
-  font-weight: 400;
-  padding: 0px 20vw 50px;
-  position: relative;
-  text-align: left;
-  font-family: 'Open Sans', serif;
-  -moz-osx-font-smoothing:grayscale;
-    -webkit-font-smoothing:antialiased;
-    font-smoothing:antialiased;
-  padding-right: 50px;
-}
-
-td {
-  padding-right: 15px;
-  padding-bottom: 17px;
-  vertical-align: top;
-}
-
-a:link, a:visited {
-  color: #646060;
-  background-color: transparent;
-  text-decoration: none;
-}
-
-a:hover {
-  color: #b20005;
-  background-color: transparent;
-  text-decoration: underline;
-}
-
-a:active {
-  color: #f5b673;
-  background-color: transparent;
-  text-decoration: underline;
-}
-
-.audio-video {
-    text-align: center;
-}
-
-/* Fading animation */
-.fade {
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
-  animation-name: fade;
-  animation-duration: 1.5s;
-}
-
-/* @-webkit-keyframes fade {
-  from {opacity: .4} 
-  to {opacity: 1}
-}
-
-@keyframes fade {
-  from {opacity: .4} 
-  to {opacity: 1}
-} */
-
-/* On smaller screens, decrease text size */
-@media only screen and (max-width: 300px) {
-  .prev, .next,.text {font-size: 15px}
-}
-
-@media only screen and (max-width: 1200px) {
-  img {max-height: 30vh; min-height: 30vh;}
-  .slideshow-container{height: 100%; width: 100%;}
-  .bodytext{padding: 3px 20vw;}
-  .subtitle{padding: 3px 20vw;}
-  .text{
-    padding: 3px 12px;
-  }
-  #container1{position: absolute; width: 100%;}
-}
-
-/* The dots/bullets/indicators */
-.dot {
-  cursor: pointer;
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
-  background-color: transparent;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
-}
-
-.active, .dot:hover {
-  background-color: transparent;
-}
-</style>
 </head>
 <body>
 
@@ -340,101 +23,102 @@ a:active {
 <br>
 
 <div class="nav">
-  <a class="navSub" href="https://kimfengphotography.github.io/gallery">art practice</a>
-  <a class="navSub" href="https://kimfengphotography.com/client-work">client work</a>
-  <a class="navSub" href="https://kimfengphotography.com/writing">writing</a>
-  <a class="navSub" href="https://ko-fi.com/kimfengphotography">shop</a>
-  <a class="navSub" href="https://kimfengphotography.github.io/about">about</a>
+  <a class="navSub default-grey-link" href="https://kimfengphotography.github.io/gallery">art practice</a>
+  <a class="navSub default-grey-link" href="https://kimfengphotography.com/client-work">client work</a>
+  <a class="navSub default-grey-link" href="https://kimfengphotography.com/writing">writing</a>
+  <a class="navSub default-grey-link" href="https://ko-fi.com/kimfengphotography">shop</a>
+  <a class="navSub default-grey-link" href="https://kimfengphotography.github.io/about">about</a>
 </div>
 
+<br>
+<br>
+
+<p class="title-centered">Art Practice</p>
 
 
-<p class="title">Art Practice</p>
-
-
-<p class="subtitle">IV</p>
+<p class="subtitle-left">IV</p>
 <table style="border-style: none;">
   <tr>
     <td>2026</td>
-    <td><a href="https://kimfengphotography.com/gallery/bipoc5eva">bipoc5eva</a></td>
+    <td><a class="default-grey-link" href="https://kimfengphotography.com/gallery/bipoc5eva">bipoc5eva</a></td>
   </tr>
   <tr>
     <td>2025</td>
-    <td><a href="https://kimfengphotography.com/gallery/antara">Antara</a></td>
+    <td><a class="default-grey-link" href="https://kimfengphotography.com/gallery/antara">Antara</a></td>
   </tr>
 </table>
 
 <br>
 
-<p class="subtitle">III</p>
+<p class="subtitle-left">III</p>
 <table style="border-style: none;">
   <tr>
     <td>2023</td>
-    <td><a href="https://kimfengphotography.com/gallery/melbourne-cemetery">Melbourne General Cemetery</a></td>
+    <td><a class="default-grey-link" href="https://kimfengphotography.com/gallery/melbourne-cemetery">Melbourne General Cemetery</a></td>
   </tr>
   <tr>
     <td></td>
-    <td><a href="https://kimfengphotography.com/gallery/camperdown-cemetery">Camperdown Cemetery</a></td>
+    <td><a class="default-grey-link" href="https://kimfengphotography.com/gallery/camperdown-cemetery">Camperdown Cemetery</a></td>
   </tr>
   <tr>
     <td>2022</td>
-    <td><a href="https://kimfengphotography.com/gallery/plenty-gorge">Plenty Gorge</a></td>
+    <td><a class="default-grey-link" href="https://kimfengphotography.com/gallery/plenty-gorge">Plenty Gorge</a></td>
   </tr>
   <tr>
     <td></td>
-    <td><a href="https://kimfengphotography.com/gallery/yallock-bulluk">Yallock-Bulluk Marine and Coastal Park</a></td>
+    <td><a class="default-grey-link" href="https://kimfengphotography.com/gallery/yallock-bulluk">Yallock-Bulluk Marine and Coastal Park</a></td>
   </tr>
   <tr>
     <td></td>
-    <td><a href="https://kimfengphotography.com/gallery/ferntree">Ferntree Gully Park</a></td>
+    <td><a class="default-grey-link" href="https://kimfengphotography.com/gallery/ferntree">Ferntree Gully Park</a></td>
   </tr>
   <tr>
     <td></td>
-    <td><a href="https://kimfengphotography.com/gallery/swan-valley">Swan Valley</a></td>
+    <td><a class="default-grey-link" href="https://kimfengphotography.com/gallery/swan-valley">Swan Valley</a></td>
   </tr>
 </table>
 
 <br>
 
-<p class="subtitle">II</p>
+<p class="subtitle-left">II</p>
 <table style="border-style: none;">
   <tr>
     <td>2022</td>
-    <td><a href="https://kimfengphotography.com/gallery/royal-botanical-gardens">Royal Botanical Gardens</a></td>
+    <td><a class="default-grey-link" href="https://kimfengphotography.com/gallery/royal-botanical-gardens">Royal Botanical Gardens</a></td>
   </tr>
   <tr>
     <td>2021</td>
-    <td><a href="https://kimfengphotography.com/gallery/fairfield">Fairfield Park</a></td>
+    <td><a class="default-grey-link" href="https://kimfengphotography.com/gallery/fairfield">Fairfield Park</a></td>
   </tr>
   <tr>
     <td></td>
-    <td><a href="https://kimfengphotography.com/gallery/araluen">Araluen</a></td>
+    <td><a class="default-grey-link" href="https://kimfengphotography.com/gallery/araluen">Araluen</a></td>
   </tr>
   <tr>
     <td></td>
-    <td><a href="https://kimfengphotography.com/gallery/coolbellup-walliabup">Coolbellup & Walliabup</a></td>
+    <td><a class="default-grey-link" href="https://kimfengphotography.com/gallery/coolbellup-walliabup">Coolbellup & Walliabup</a></td>
   </tr>
   <tr>
     <td></td>
-    <td><a href="https://kimfengphotography.com/gallery/male-gaze">The Male Gaze</a></td>
+    <td><a class="default-grey-link" href="https://kimfengphotography.com/gallery/male-gaze">The Male Gaze</a></td>
   </tr>
 </table>
 
 <br>
 
-<p class="subtitle">I</p>
+<p class="subtitle-left">I</p>
 <table style="border-style: none;">
   <tr>
     <td>2019</td>
-    <td><a href="https://kimfengphotography.com/gallery/switzerland-germany-austria">Switzerland, Germany, Austria</a></td>
+    <td><a class="default-grey-link" href="https://kimfengphotography.com/gallery/switzerland-germany-austria">Switzerland, Germany, Austria</a></td>
   </tr>
   <tr>
     <td>2018</td>
-    <td><a href="https://kimfengphotography.com/gallery/wardandi">Wardandi</a></td>
+    <td><a class="default-grey-link" href="https://kimfengphotography.com/gallery/wardandi">Wardandi</a></td>
   </tr>
   <tr>
     <td></td>
-    <td><a href="https://kimfengphotography.com/gallery/new-york">New York</a></td>
+    <td><a class="default-grey-link" href="https://kimfengphotography.com/gallery/new-york">New York</a></td>
   </tr>
 </table>
 
