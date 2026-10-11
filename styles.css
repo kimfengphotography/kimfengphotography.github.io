@@ -421,10 +421,18 @@ a:active {
   margin-top: 1%;
   margin-bottom: 1%;
   margin-right: 10vw;
-  margin-left: auto;
+  margin-left: 5%;
   object-fit: contain;
   float: right;
-  order: 2;
+  /* order: 2; */
+  clear: both;
+}
+
+.about-image:before {
+  content: '' ;
+  display:block;
+  float: right;
+  height: 200px;
 }
 
 .flex {
@@ -485,6 +493,7 @@ a:active {
   font-size: 25px;
   padding: 3px 10vw;
   margin-left: 35px;
+  margin-bottom: 0px;
   position: relative;
   text-align: left;
   font-family: 'Playfair Display', serif;
@@ -497,6 +506,7 @@ a:active {
   font-weight: 400;
   padding: 0px 10vw 0px;
   margin: 35px;
+  margin-bottom: 0px;
   position: relative;
   text-align: left;
   font-family: 'Open Sans', serif;
@@ -569,6 +579,7 @@ a:active {
     .mySlides14 img {max-height: 30vh; min-height: 30vh;}
     .mySlides15 img {max-height: 30vh; min-height: 30vh;}
     .mySlides16 img {max-height: 30vh; min-height: 30vh;}
+    .client-work-image {max-height: 30vh; min-height: 30vh;}
     .portrait-image.portrait-image.portrait-image {max-height: 50vh; min-height: 30vh;}
     .about-image {width: 100%; margin-right: 0px; order: 1;}
     .about-table {margin-right: 0px; margin-left: 0px; padding: 3px 10vw; width: 100%;}
